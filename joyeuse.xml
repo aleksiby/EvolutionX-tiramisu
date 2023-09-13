@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="neko-github"
+           fetch="https://github.com/nekoshirro"/>
+  <remote  name="aleksiby"
+	   fetch="https://github.com/aleksiby"/>
+
+    <!-- Device Repository -->
+    <project path="device/xiaomi/joyeuse" name="EvolutionX-tiramisu" remote="aleksiby" revision="device"/>
+
+    <!-- Vendor Repository -->
+    <project path="vendor/xiaomi/joyeuse" name="vendor_xiaomi_joyeuse" remote="aleksiby" revision="13"/>
+
+    <!-- Kernel and Toolchain Repository -->
+    <project path="kernel/xiaomi/sm6250" name="nekoshirro/android_kernel_xiaomi_sm6250" remote="github" revision="Krypton-HCK"/>
+    <project path="prebuilts/clang/host/linux-x86/clang-proton" name="kdrag0n/proton-clang" remote="github" revision="master" clone-depth="1"/> 
+
+    <!-- Custom Repositories -->
+    <remove-project name="platform/external/jemalloc_new" />
+    <remove-project name="frameworks_av" />
+    <remove-project name="frameworks_base" />
+    <remove-project name="bionic" />
+    <remove-project name="build" />
+    <remove-project name="build_soong" />
+    <remove-project name="manifest" />
+    <remove-project name="system_core" />
+    <project path="frameworks/av" name="android_frameworks_av" revision="tiramisu-jem" remote="aleksiby" />
+    <project path="frameworks/base" name="android_frameworks_base" revision="tiramisu-jem" remote="aleksiby" />
+    <project path="bionic" name="android_bionic" revision="tiramisu-jem" remote="aleksiby" />
+    <project path="build/make" name="android_build" revision="tiramisu-jem" remote="aleksiby" groups="pdk" >
+      <copyfile src="core/root.mk" dest="Makefile" />
+      <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+      <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+      <linkfile src="core" dest="build/core" />
+      <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+      <linkfile src="target" dest="build/target" />
+      <linkfile src="tools" dest="build/tools" />
+    </project>
+    <project path="build/soong" name="android_build_soong" revision="tiramisu-jem" remote="aleksiby" groups="pdk,tradefed" >
+      <linkfile src="root.bp" dest="Android.bp" />
+      <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+    </project>
+  <project path="manifest" name="android_manifest" revision="tiramisu-jem" remote="aleksiby" />
+  <project path="system/core" name="android_system_core" revision="tiramisu-jem" remote="aleksiby" />
+
+</manifest>
