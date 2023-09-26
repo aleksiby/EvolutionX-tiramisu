@@ -7,13 +7,15 @@
 	   fetch="https://github.com/aleksiby"/>
 
     <!-- Device Repository -->
-    <project path="device/xiaomi/joyeuse" name="EvolutionX-tiramisu" remote="aleksiby" revision="device"/>
+    <project path="device/xiaomi/joyeuse" name="EvolutionX-tiramisu" remote="aleksiby" revision="device-joyeuse"/>
+    <project path="device/xiaomi/sm6250-common" name="EvolutionX-tiramisu" remote="aleksiby" revision="device-sm6250"/>
 
     <!-- Vendor Repository -->
-    <project path="vendor/xiaomi/joyeuse" name="vendor_xiaomi_joyeuse" remote="aleksiby" revision="13"/>
+    <project path="vendor/xiaomi/joyeuse" name="EvolutionX-tiramisu" remote="aleksiby" revision="vendor-joyeuse"/>
+    <project path="vendor/xiaomi/sm6250-common"  name="EvolutionX-tiramisu" remote="aleksiby" revision="vendor-sm6250"/>
 
     <!-- Kernel and Toolchain Repository -->
-    <project path="kernel/xiaomi/sm6250" name="nekoshirro/android_kernel_xiaomi_sm6250" remote="github" revision="Krypton-HCK"/>
+    <project path="kernel/xiaomi/sm6250" name="nekoshirro/android_kernel_xiaomi_sm6250" remote="github" revision="Melon"/>
     <project path="prebuilts/clang/host/linux-x86/clang-proton" name="kdrag0n/proton-clang" remote="github" revision="master" clone-depth="1"/> 
 
     <!-- Custom Repositories -->
