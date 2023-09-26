@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021-2022 The LineageOS Project
+# Copyright (C) 2023 Android Open Source Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -40,4 +40,4 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine-joyeuse.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-joyeuse.conf
 
 # Inherit proprietary targets
-$(call inherit-product, vendor/xiaomi/miatoll/miatoll-vendor.mk)
+$(call inherit-product, vendor/xiaomi/joyeuse/joyeuse-vendor.mk)

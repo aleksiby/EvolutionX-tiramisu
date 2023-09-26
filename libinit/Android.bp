@@ -1,12 +1,12 @@
 //
-// Copyright (C) 2021 The LineageOS Project
+// Copyright (C) 2023 Android Open Source Project
 //
 // SPDX-License-Identifier: Apache-2.0
 //
 
 cc_library_static {
-    name: "init_xiaomi_miatoll",
-    srcs: ["init_xiaomi_miatoll.cpp"],
+    name: "init_xiaomi_joyeuse",
+    srcs: ["init_xiaomi_joyeuse.cpp"],
     whole_static_libs: ["//device/xiaomi/sm6250-common:libinit_xiaomi_atoll"],
     include_dirs: ["system/core/init"],
     recovery_available: true,
