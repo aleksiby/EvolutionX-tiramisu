@@ -44,6 +44,7 @@ rm -rf hardware/dolby
 rm -rf prebuilts/clang/host/linux-x86/clang-alchemist
 rm -rf external/jemalloc_new
 rm -rf vendor/evolution
+rm -rf hardware/sony/timekeep
 
 # Clone needed repository
 git clone https://gitlab.com/ImSurajxD/clang-r450784d.git prebuilts/clang/host/linux-x86/clang-r450784d --depth 1
