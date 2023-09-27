@@ -51,3 +51,4 @@ git clone https://github.com/Positron-B/vendor_xiaomi_miuicamera.git vendor/xiao
 git clone https://github.com/aleksiby/android_external_jemalloc_new.git external/jemalloc_new --depth 1
 git clone https://github.com/nekoshirro/vendor_evolution-x.git vendor/evolution --depth 1
 git clone https://gitlab.com/nekoshirro/Alchemist-LLVM.git prebuilts/clang/host/linux-x86/clang-alchemist --depth 1
+git clone https://github.com/LineageOS/android_hardware_sony_timekeep.git hardware/sony/timekeep -b lineage-20
